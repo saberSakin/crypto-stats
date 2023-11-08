@@ -27,25 +27,28 @@ const Exchanges = () => {
       ) : (
         <>
           <Header />
-          <div className="model-container">
-            <OurModel />
-          </div>
 
           <div>
-            {exchanges.map((item, i) => {
-              return (
-                <div key={i} className="ex-cards">
-                  <div className="image">
-                    <img height={"80px"} src={item.image} alt="" />
+            <div style={{ paddingBottom: "100vh" }}>
+              <OurModel />
+            </div>
+            <div>
+              {" "}
+              {exchanges.map((item, i) => {
+                return (
+                  <div key={i} className="ex-cards">
+                    <div className="image">
+                      <img height={"80px"} src={item.image} alt="" />
+                    </div>
+                    <div className="name">{item.name}</div>
+                    <div className="price">
+                      {item.trade_volume_24h_btc.toFixed(0)}
+                    </div>
+                    <div className="rank">{item.trust_score_rank}</div>
                   </div>
-                  <div className="name">{item.name}</div>
-                  <div className="price">
-                    {item.trade_volume_24h_btc.toFixed(0)}
-                  </div>
-                  <div className="rank">{item.trust_score_rank}</div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </>
       )}

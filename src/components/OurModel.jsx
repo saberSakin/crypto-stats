@@ -14,7 +14,11 @@ const OurModel = () => {
         dpr={[1, 2]}
         shadows
         camera={{ fov: 45 }}
-        style={{ position: "absolute", top: "7%" }}
+        style={{
+          position: "absolute",
+
+          top: "7%",
+        }}
       >
         <color attach="background" args={["#101010"]} />
         <ambientLight intensity={-1} />
