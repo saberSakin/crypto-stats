@@ -19,12 +19,13 @@
 
 .btns button {
   height: 2rem;
-  background-color: orange;
+  background-color: rgb(52, 206, 52);
   border: none;
   margin-left: 30px;
   width: 5rem;
   border-radius: 10px;
   margin-top: 60px;
+  font-weight: bold;
 }
 .btns {
   margin-left: 12rem;

@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { useGLTF, PresentationControls, Stage } from "@react-three/drei";
 
 function Model(props) {
-  const { scene } = useGLTF("./bitcoin.glb");
+  const { scene } = useGLTF("./eth.glb");
   return <primitive object={scene} {...props} />;
 }
 

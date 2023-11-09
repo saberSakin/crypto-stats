@@ -38,14 +38,6 @@ const Coins = () => {
               type="text"
               placeholder="Search Your Coins "
               onChange={(e) => setSearch(e.target.value)}
-              style={{
-                height: "2rem",
-                width: "20rem",
-                position: "absolute",
-                top: "1%",
-                left: "3",
-                paddingLeft: "5px",
-              }}
             />
           </div>
           <div className="btns">

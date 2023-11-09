@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <h1>CryptoVerse </h1>
-        <FaEthereum color="orange" size={"25"} />
+        <h1>CryptoStats </h1>
+        <FaEthereum color="violet" size={"35"} />
       </div>
       <ul>
         <li>

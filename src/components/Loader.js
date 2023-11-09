@@ -1,5 +1,5 @@
 import React from "react";
-import { LineWave } from "react-loader-spinner";
+import { Triangle } from "react-loader-spinner";
 
 const Loader = () => {
   return (
@@ -11,17 +11,14 @@ const Loader = () => {
         height: "100vh",
       }}
     >
-      <LineWave
-        height="200"
-        width="200"
+      <Triangle
+        height="100"
+        width="100"
         color="#4fa94d"
-        ariaLabel="line-wave"
+        ariaLabel="triangle-loading"
         wrapperStyle={{}}
-        wrapperClass=""
+        wrapperClassName=""
         visible={true}
-        firstLineColor=""
-        middleLineColor=""
-        lastLineColor=""
       />
     </div>
   );
